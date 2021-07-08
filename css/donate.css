@@ -1,0 +1,36 @@
+/* ----------------------- Responsive Navigation Bar ------------------------*/
+.navbar .res_icon1, .navbar .res_icon2{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .navbar a:not(:nth-child(4)) {display: none;}
+    .navbar a:nth-child(4){
+        width: 83.2%;
+    }
+    .navbar a.res_icon1 {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .navbar.responsive {position:relative;}
+    .navbar.responsive .res_icon1 {
+        display: none;
+    }
+    .navbar .responsive .res_icon2{
+        float: right;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: auto;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+}

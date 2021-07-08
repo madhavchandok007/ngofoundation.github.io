@@ -1,0 +1,129 @@
+/* ----------------------- Responsive Navigation Bar ------------------------*/
+.navbar .res_icon1, .navbar .res_icon2{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .navbar a:not(:nth-child(5)) {display: none;}
+    .navbar a:nth-child(5){
+        width: 83.2%;
+    }
+    .navbar a.res_icon1 {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .navbar.responsive {position:relative;}
+    .navbar.responsive .res_icon1 {
+        display: none;
+    }
+    .navbar .responsive .res_icon2{
+        float: right;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: auto;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/*------- History of Organization----------*/
+
+.history{
+    background-color: #e6ffff;
+    margin:20px 20px;
+    padding: 10px 20px;
+    line-height: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 8px 0 #99ffff;
+    text-align: justify;
+}
+
+.history h1{
+    text-align: center; 
+    border-bottom: 2px solid;
+}
+
+.history p{
+    font-size: 22px;
+}
+
+@media screen and (max-width: 550px){
+    .history p{
+        font-size: 19px;
+    }
+}
+
+/*-----------Help Through Donation------------------------*/
+
+.help{
+    background-color: #ffe6ff;
+    margin: 30px 20px;
+    padding: 10px 20px;
+    border-radius:20px;
+    box-shadow: 0 10px 10px 0 #ffccff;
+}
+
+.help h1{
+    text-align: center;
+    border-bottom: 2px solid;
+}
+
+.help ul i{
+    color: #8600b3;
+    font-size: 25px;
+}
+
+.help ul li{
+    font-size: 22px;
+    line-height: 30px;
+    text-align: justify;
+    padding-right: 30px; 
+}
+
+@media screen and (max-width: 550px){
+    .help ul li{
+        font-size: 19px;
+    }
+}
+
+/*---------------Mission of Organization--------------------------*/
+
+.mission{
+    background-color: #ffe4cc;
+    margin: 30px 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px 0 #ffc999;
+}
+
+.mission h1{
+    text-align: center;
+    border-bottom: 2px solid;
+}
+
+.mission ul i{
+    color:#00cc00;
+    font-size:25px;
+}
+
+.mission ul li, .mission p{
+    font-size: 22px;
+    line-height: 30px;
+    text-align: justify;
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 550px){
+    .mission ul li, .mission p{
+        font-size: 19px;
+    }
+}
